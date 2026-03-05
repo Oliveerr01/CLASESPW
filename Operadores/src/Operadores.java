@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Operadores {
     public void operadoresAritmeticos() {
         System.out.println("Explicacion de los operadores aritméticos");
@@ -68,5 +70,23 @@ public class Operadores {
         boolean resultadoCon = numeroUno < 10 || numeroTres > 0 || numeroDos != 9 & numeroUno > 0;
 // true     ||    true      ||    true      &    true --> true
         System.out.println("El resultado logico de OR y AND es: " + resultadoCon);
+    }
+
+    public void evaluarCandidato() {
+        Scanner lectorTeclado = new Scanner (System.in); //la variable scanner es para que podamos escribir
+        System.out.println("Dime tu nombre y apellidos");
+        String nombreApellido = lectorTeclado.nextLine(); //nextLine es para escribir strings con espacios
+        System.out.println("Dime tu edad");
+        int edad = lectorTeclado.nextInt();
+        System.out.println("Dime tu salario");
+        double salario= lectorTeclado.nextDouble();
+        System.out.println("Tienes experiencia");
+        boolean experiencia = lectorTeclado.nextBoolean();
+
+        //Edad inferior a 40 y sueldo < 40000 y experiencia
+        boolean resultadoEvaluacion = edad<40 && salario < 40000 && experiencia;
+        System.out.println("El resultado de la evaluación es:"+resultadoEvaluacion);
+
+        lectorTeclado.close();  //es para cerrar el proceso, es buena practica
     }
 }

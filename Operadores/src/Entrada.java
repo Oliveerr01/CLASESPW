@@ -4,6 +4,7 @@ public class Entrada {
         Operadores operadoresVariable = new Operadores();
         //operadoresVariable.operadoresAritmeticos (); //ponemos a el aritmetico o el de comparación para que se ejecute
         //operadoresVariable.operadoresComparacion ();
-        operadoresVariable.operadoresLogicos();
+        //operadoresVariable.operadoresLogicos();
+        operadoresVariable.evaluarCandidato();
     }
 }
