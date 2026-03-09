@@ -89,4 +89,24 @@ public class Operadores {
 
         lectorTeclado.close();  //es para cerrar el proceso, es buena practica
     }
+
+    public void cambioTipo() {
+        //int letraASCII = 115;
+        //char letra = 'a'
+        //String palabra = "hola";
+
+        //System.out.println ((char)letrAScii);
+        //System.out.println ((int)letra);
+        //System.out.println (Integer.parseInt(palabra));
+
+        //String palabra = "si";
+        //System.out.println (Boolean.parseBoolean(palabra));
+
+        //int numero =123;
+        //System.out.println(String.valueOf(123)+1); //--> en consola da 1231
+
+        boolean cierto = true;
+        System.out.println(String.valueOf(cierto)+"asd"); //--> trueasd
+
+    }
 }
