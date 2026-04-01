@@ -43,5 +43,5 @@ public class Bonoloto {
         }
     }
 
-    //comprobar cuantos aciertos 
+    //comprobar cuantos aciertos
 }
