@@ -1,8 +1,9 @@
 package model;
 
-public class Profesor extends Persona{
-    private int salario, nHoras;
+public abstract class Profesor extends Persona {
 
+    private int salario;
+    private int nHoras;
     public Profesor(){}
 
     public Profesor(String nombre, String apellido, int salario){
@@ -10,15 +11,21 @@ public class Profesor extends Persona{
         this.salario = salario;
     }
 
-    public Profesor(String nombre, String apellido, int salario, int nHoras){
+    public Profesor(String nombre, String apellido, int salario, int nHora){
         super(nombre,apellido);
         this.salario = salario;
-        this.nHoras = nHoras;
+        this.nHoras = nHora;
     }
 
     @Override
     public void saludar() {
+        // TODO escribir el contenido del metodo
         System.out.println("Soy profesor y vamos a impartir la clase");
+    }
+
+    public void corregirExamen(){
+        System.out.println("Empezando la tarea");
+        System.out.println("Vamos a corregir el examen");
     }
 
     @Override
@@ -26,11 +33,6 @@ public class Profesor extends Persona{
         super.mostrarDatos();
         System.out.println("salario = " + salario);
         System.out.println("nHoras = " + nHoras);
-    }
-
-    public void corregirExamen(){
-        System.out.println("Empezando la tarea");
-        System.out.println("Vamos a corregir el examen");
     }
 
     public int getSalario() {

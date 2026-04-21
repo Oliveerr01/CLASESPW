@@ -1,7 +1,6 @@
 package model;
 
 public abstract class Persona {
-    //es una clase abstracta porque no vamos a crear personas, ya que en un colegio hay alumnos, profesores...
     private String nombre, apellido;
 
     // 1 constructores
@@ -12,7 +11,7 @@ public abstract class Persona {
 
     public Persona(){}
 
-    public abstract void saludar ();
+    public abstract void saludar();
 
     public void mostrarDatos(){
         System.out.println("nombre = " + nombre);
@@ -35,4 +34,3 @@ public abstract class Persona {
         this.apellido = apellido;
     }
 }
-
